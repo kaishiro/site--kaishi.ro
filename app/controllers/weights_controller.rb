@@ -1,7 +1,13 @@
 class WeightsController < ApplicationController
 
+  skip_before_filter :verify_authenticity_token, :only => [:create]
+
   def index
     @weights = Weight.all
+  end
+
+  def show
+    @weight = Weight.find(params[:id])
   end
 
   def create
