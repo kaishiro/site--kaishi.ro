@@ -1,1 +1,27 @@
-<h1>Hi, I'm kaishiro</h1>
+<h1 class="hello">
+  <span class="hello__greeting">Hi, I'm</span>
+  <span class="hello__name">kaishiro</span>
+</h1>
+
+<div class="data">
+  Last night...
+  
+
+  Currently...
+  <br /><br />
+  I'm 
+  <% if @sleep.action == true %>
+    <span class="data__point">sleeping.</span>
+  <% else %>
+    <span class="data__point">awake!</span>
+  <% end %>
+  <br /><br /><br /><br />
+  Today...
+  <br /><br />
+  I weigh <span class="data__point"><%= @weight %></span> pounds.
+  <br /><br />
+   
+
+ 
+  
+</div>

@@ -1,0 +1,30 @@
+.page {
+  background:#ffd700;
+}
+
+.hello {
+  float:left;
+  font-family:'Josefin Sans', sans-serif;	
+  width:60%;
+  .hello__greeting {
+    padding:.5em 0 0 .25em;
+    display:block;
+    width:100%;
+  }
+  .hello__name {
+    padding-left:.25em;
+    display:block;
+    width:100%;
+  }
+}
+
+.data {
+  font-family:'Josefin Sans', sans-serif;
+  float:left;
+  width:40%;
+  margin-top:50px;
+font-size:24px;
+  .data__point {
+    font-weight:bold;
+  }
+}
