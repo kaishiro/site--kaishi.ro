@@ -7,6 +7,10 @@ Www::Application.routes.draw do
   root 'welcome#index'
 
   resources :weights
+  resources :foods
+  resources :sleeps
+  resources :exercises
+  resources :inputs
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

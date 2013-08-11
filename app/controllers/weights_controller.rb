@@ -17,7 +17,7 @@ class WeightsController < ApplicationController
   def create
 
     @weight = Weight.new
-    @weight.weight = params[:Body]
+    @weight.weight = params[:post][:weight]
 
     @weight.save
     redirect_to @weight

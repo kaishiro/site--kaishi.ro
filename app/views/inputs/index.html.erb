@@ -1,0 +1,11 @@
+<h1>Inputs</h1>
+
+<% @inputs.each do |input| %>
+<%= input.body %>, <%= input.created_at %><br />
+<% end %>
+
+<h1>Weights</h1>
+
+<% @weights.each do |weight| %>
+<%= weight.weight %>, <%= weight.created_at %><br />
+<% end %>
