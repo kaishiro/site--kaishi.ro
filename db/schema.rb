@@ -11,10 +11,50 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130811130218) do
+ActiveRecord::Schema.define(version: 20130811174702) do
+
+  create_table "exercises", force: true do |t|
+    t.string   "name"
+    t.integer  "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "expenses", force: true do |t|
+    t.string   "name"
+    t.decimal  "amount"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "foods", force: true do |t|
+    t.string   "name"
+    t.integer  "calories"
+    t.string   "glyph"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "inputs", force: true do |t|
     t.string   "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "sleeps", force: true do |t|
+    t.boolean  "action"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "vitamins", force: true do |t|
+    t.boolean  "consumed"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "waters", force: true do |t|
+    t.boolean  "consumed"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -24,9 +24,5 @@ class WeightsController < ApplicationController
 
   end
 
-  private
-    def post_params
-      params.require(:weight).permit(:weight)
-    end
 
 end

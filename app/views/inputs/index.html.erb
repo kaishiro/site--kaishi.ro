@@ -9,3 +9,39 @@
 <% @weights.each do |weight| %>
 <%= weight.weight %>, <%= weight.created_at %><br />
 <% end %>
+
+<h1>Foods</h1>
+
+<% @foods.each do |food| %>
+<%= food.name %>, <%= food.calories %>, <%= food.glyph %>, <%= food.created_at %><br />
+<% end %>
+
+<h1>Sleeps</h1>
+
+<% @sleeps.each do |sleep| %>
+<%= sleep.action %>, <%= sleep.created_at %><br />
+<% end %>
+
+<h1>Exercises</h1>
+
+<% @exercises.each do |exercise| %>
+<%= exercise.name %>, <%= exercise.value %>, <%= exercise.created_at %><br />
+<% end %>
+
+<h1>Vitamins</h1>
+
+<% @vitamins.each do |vitamin| %>
+<%= vitamin.consumed %>, <%= vitamin.created_at %><br />
+<% end %>
+
+<h1>Waters</h1>
+
+<% @waters.each do |water| %>
+<%= water.consumed %>, <%= water.created_at %><br />
+<% end %>
+
+<h1>Expenses</h1>
+
+<% @expenses.each do |expense| %>
+<%= expense.name %>, <%= expense.amount %>, <%= expense.created_at %><br />
+<% end %>

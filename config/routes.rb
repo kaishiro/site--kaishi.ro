@@ -10,6 +10,9 @@ Www::Application.routes.draw do
   resources :foods
   resources :sleeps
   resources :exercises
+  resources :vitamins
+  resources :waters
+  resources :expenses
   resources :inputs
 
   # Example of regular route:
