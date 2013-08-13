@@ -4,11 +4,48 @@
 </h1>
 
 <div class="data">
-  Last night...
+
+  <div class="data__heading">
+    Currently...
+  </div>
+  
+  <div class="data__group">
+    I'm <span class="data__point"><%= (@sleeping? "sleeping." : "awake!") %></span>
+  </div>
+
+  <% if @sleeping %>
+    <div class="data__group">
+      I've been sleeping for <span class="data__point"><%= @sleep_duration %></span>
+    </div>
+    <div class="data__group">
+      <%=h @sleep_quote %>
+    </div>
+  <% else %>
+    <div class="data__heading">
+      Last night...
+    </div>
+
+    <div class="data__group">
+      I slept for <span class="data__point"><%= @sleep_duration %></span>
+    </div>
+
+    <div class="data__heading">
+      Today...
+    </div>
+    
+    <div class="data__group">
+        I weigh <span class="data__point"><%= @weight %></span> pounds.
+    </div>  
+
+    <div class="data__group">
+        I've consumed <span class="data__point"><%= @calories %></span> calories.
+    </div>  
+    
+    <div class="data__group">
+      I <span class="data__point"><%= (@vitamin? "took a vitamin!" : "didn't take a vitamin :(") %></span>
+    </div>  
+  <% end %>
+
   
 
-   
-
- 
-  
 </div>

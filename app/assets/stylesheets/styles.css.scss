@@ -23,7 +23,17 @@
   float:left;
   width:40%;
   margin-top:50px;
-font-size:24px;
+  font-size:24px;
+  .data__heading {
+    font-size:30px;
+    margin-top:1.5em;
+    &:first-child {
+      margin-top:0;
+    }
+  }
+  .data__group {
+    margin-top:1em;
+  }
   .data__point {
     font-weight:bold;
   }
