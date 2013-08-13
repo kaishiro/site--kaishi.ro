@@ -1,5 +1,15 @@
 .page {
-  background:#ffd700;
+  background-color:#ffd700;
+    color:#222222; 
+  -webkit-transition: background-color 5000ms linear, color 5000ms linear;
+  -moz-transition: background-color 5000ms linear, color 5000ms linear;
+  -o-transition: background-color 5000ms linear, color 5000ms linear;
+  -ms-transition: background-color 5000ms linear, color 5000ms linear;
+  transition: background-color 5000ms linear, color 5000ms linear;
+  &.page--sleeping {
+    background-color:#36454F;
+    color:#DEDEDE; 
+  }
 }
 
 .hello {
@@ -7,12 +17,12 @@
   font-family:'Josefin Sans', sans-serif;	
   width:60%;
   .hello__greeting {
-    padding:.5em 0 0 .25em;
+    padding:.5em 0 0 100px;
     display:block;
     width:100%;
   }
   .hello__name {
-    padding-left:.25em;
+    padding-left:100px;
     display:block;
     width:100%;
   }
@@ -22,6 +32,7 @@
   font-family:'Josefin Sans', sans-serif;
   float:left;
   width:40%;
+  padding-right:100px;
   margin-top:50px;
   font-size:24px;
   .data__heading {
@@ -33,6 +44,7 @@
   }
   .data__group {
     margin-top:1em;
+    line-height:1.5em;
   }
   .data__point {
     font-weight:bold;

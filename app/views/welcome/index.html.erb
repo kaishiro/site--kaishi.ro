@@ -9,7 +9,7 @@
     Currently...
   </div>
   
-  <div class="data__group">
+  <div class="data__group data__group--sleeping" data-sleeping="<%= @sleeping %>">
     I'm <span class="data__point"><%= (@sleeping? "sleeping." : "awake!") %></span>
   </div>
 
@@ -18,7 +18,7 @@
       I've been sleeping for <span class="data__point"><%= @sleep_duration %></span>
     </div>
     <div class="data__group">
-      <%=h @sleep_quote %>
+      <%= @sleep_quote %>
     </div>
   <% else %>
     <div class="data__heading">
@@ -34,16 +34,25 @@
     </div>
     
     <div class="data__group">
+      I <span class="data__point"><%= (@vitamin? "took a vitamin!" : "didn't take a vitamin :(") %></span>
+    </div>  
+    
+    <div class="data__group">
+      I <span class="data__point"><%= (@exercises? "did some exercises!" : "didn't exercise :(") %></span>
+    </div>  
+    
+    <div class="data__group">
         I weigh <span class="data__point"><%= @weight %></span> pounds.
     </div>  
 
     <div class="data__group">
-        I've consumed <span class="data__point"><%= @calories %></span> calories.
+      I've <%= @food_verb %> <span class="data__point"><%= @calories %></span> calories.
     </div>  
     
     <div class="data__group">
-      I <span class="data__point"><%= (@vitamin? "took a vitamin!" : "didn't take a vitamin :(") %></span>
+      I've <%= @water_verb %> <span class="data__point"><%= @waters %></span> of my 8 glasses of water today.
     </div>  
+    
   <% end %>
 
   
